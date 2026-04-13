@@ -1,0 +1,33 @@
+#Animal List Test 
+import time
+
+animals = ['aardvark', 'anteater', 'antelope', 'albert']
+
+#1+3 in list then print
+print(animals[1] + ' ' + animals[3])
+print()
+
+#check if ant and albert is in the list
+print("'ant' in animals:")
+print('ant' in animals)
+print()
+print("'albert' in animals:")
+print('albert' in animals)
+
+#Wait command
+time.sleep(3)
+
+#switch albert to ant
+animals[3] = 'ant'
+print()
+
+#1+3 in list then print again
+print(animals[1] + ' ' + animals[3])
+print()
+
+#recheck if ant and albert is in the list
+print("'ant' in animals:")
+print('ant' in animals)
+print()
+print("'albert' in animals:")
+print('albert' in animals)
