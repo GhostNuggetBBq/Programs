@@ -1,0 +1,17 @@
+#linear equation
+m = eval(input('Give me the a value(slope):'))
+
+b = eval(input('Give me the b value(Y-intercept):'))
+
+step = eval(input('Give me the step value:'))
+
+x_limit = eval(input('When do you want the x to stop:'))
+x = 0
+
+print()
+while x_limit > 0:
+    x_limit = x_limit - 1
+    x = (1+x)
+    answer = m*(x*step) + b
+    print(answer)
+    print()
