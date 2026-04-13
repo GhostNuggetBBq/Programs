@@ -1,0 +1,90 @@
+#TextStoryGame Not Finished
+import time
+import random
+
+#Starting Text
+print("You awake in a forest.")
+time.sleep(1)
+print()
+print('You see two paths.')
+time.sleep(1)
+print()
+print('One is a pond filled with fireflies.')
+time.sleep(.5)
+print()
+print('One is a forest surrounded by darkness.')
+time.sleep(1)
+print()
+
+#Stored Text
+option1A = 'You see fireflies flying around you, you see your reflection, it feels off.'
+option1B = 'You enter the forest, the dark feels choking, you hear the voices of those lost.'
+option2A = 'You feel the pressure of the water get stronger and stronger. You feel your life fall in the hands of .'
+option2B = 'Hi I am A Test For option2B'
+option3A = 'Hi I am A Test For option3A'
+option3B = 'Hi I am A Test For option3B'
+
+A = None
+o1 = option1A
+o2 = option1B
+
+def optionab():
+    print('Where will you go?')
+    print('   A        B     ')
+    selection = input()
+    selection = selection.lower()
+    global A
+    if len(selection) != 1:
+        print('Please enter a single letter.')
+    elif selection not in 'abAB':
+        print('Please enter a valid letter.')
+    elif selection in 'Aa':
+        print(o1)
+        A = 0
+        print(A)
+    elif selection in 'Bb':
+        print(o2)
+        A = 1
+        return selection
+
+def optionabcd():
+    print('Where will you go?')
+    print('  A   C   B    D  ')
+    selection = input()
+    selection = selection.lower()
+    global A
+    if len(selection) != 1:
+        print('Please enter a single letter.')
+    elif selection not in 'abcdABCD':
+        print('Please enter a valid letter.')
+    elif selection in 'Aa':
+        print(o1)
+        A = 0
+        print(A)
+    elif selection in 'Bb':
+        print(o2)
+        A = 1
+    elif selection in 'Cc':
+        print(o3)
+        A = 2
+    elif selection in 'Dd':
+        print(o4)
+        A = 3
+        return selection
+optionab()
+print()
+
+if A == 0:
+    o1 = option2A
+    o2 = option2B
+    o3 = option2C
+    o4 = option2D
+    print()
+    print('You see a light at the bottom of the pond, it is to far down to reach. You see a path before you. You see at the end a net.')
+    optionabcd
+elif A == 1:
+    o1 = option3A
+    o2 = option3B
+    print()
+    print('Before you is a well. You hear voices coming from the deep. The longer you wait the more the voices sound familiar. Behind the well is a path that leads to a tree with an axe inside of it.')
+    optionab
