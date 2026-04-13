@@ -1,0 +1,19 @@
+#Error Code Program Broke
+amount = eval(input("Give me a number: "))
+stop = eval(input("When do you want me to stop: "))
+step = 2
+
+if amount % 2:
+    whle stop > 0:
+        stop -= 1
+        amount = amount ** step
+        print(amount)
+elif amount % 3:
+    while stp > 0:
+        stop -= 1
+        amount = amount * step
+        print(amount)
+else:
+    while stop > 0:
+        stop -= 0
+        amount = amount / step
