@@ -1,0 +1,17 @@
+//initials
+#include <iostream>
+#include <string>
+
+int main() {
+    
+    std::string One = "A.";
+    
+    std::string Two = "Y.";
+    
+    std::string Three = "O.";
+    
+    std::cout << One << std::endl << Two << std::endl << Three;
+
+    return 0;
+}
+
