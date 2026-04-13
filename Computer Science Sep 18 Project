@@ -1,0 +1,35 @@
+#Computer Science Sep 18 Project
+import time
+
+health = 95
+coins = 50
+score = 60
+
+print('Just as you start to relax, the ground shakes.')
+print()
+time.sleep(1)
+
+print('A roar splits the sky—an enormous dragon descends, its eyes blazing!')
+print()
+time.sleep(1)
+
+print('The fight is fierce, and your health plummets by 80 points,')
+health = health - 80
+print(f'   You have {health} health.')
+time.sleep(1.5)
+
+print()
+print('but with all your strength, you strike the final blow.')
+time.sleep(1)
+
+print()
+print('The dragon collapses, and you gain 50 points for your victory.')
+score = score + 50
+print(f'   You have {score} score.')
+time.sleep(1)
+
+#Original Code
+print()
+print('You find a large pile of gold.')
+coins = coins + 500
+print(f'   You have {coins} coins.')
