@@ -1,0 +1,48 @@
+//Variable Testing
+#include <iostream>
+#include <string>
+
+int main() {
+    
+    int number_1;
+    
+    int number_2 = 5; //Base 10
+    
+    number_1 = 0x17; //Base 16
+    
+    int number_3 = 032; //Base 8
+    
+    char digit;
+    
+    digit = 'F';
+    
+    char digital;
+    
+    std::string movieTitle;
+    
+    movieTitle = "Iron Lung";
+    
+    std::cout << "Testing ints: " << number_2 << std::endl;
+    
+    std::cout << "Testing ints 2: " << number_1 << std::endl;
+
+    std::cout << "Testing ints 3: " << number_3 << std::endl;
+    
+    std::cout << "Testing char: " << digit << std::endl;
+    
+    digital = 63;
+    
+    std::cout << "Testing char 2: " << digital << std::endl;
+    
+    digital = 64;
+    
+    std::cout << "Testing char 3: " << digital << std::endl;
+    
+    digital = 67;
+    
+    std::cout << "Testing char 4: " << digital << std::endl;
+    
+    std::cout << "Testing string: " << movieTitle << std::endl;
+
+    return 0;
+}
