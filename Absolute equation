@@ -1,0 +1,53 @@
+#Absolute equation
+a = eval(input('Give me the a value:'))
+
+h = eval(input('Give me the h value:'))
+
+k = eval(input('Give me the k value:'))
+
+step = eval(input('Give me the step value:'))
+
+x_limit = eval(input('When do you want the x to stop:'))
+
+neg_x_limit = x_limit
+
+x = 0
+y = 0
+a_s = a * step
+#a|x-h|+k
+
+
+x_vertex = x - h
+y_vertex = y + k
+
+x = (x - h) - step * x_limit - 1
+y = (y + k) + a_s * x_limit
+
+while neg_x_limit > 0:
+    print()
+    neg_x_limit = neg_x_limit - 1
+    x = (x + step)
+    print(f'{x},{y}')
+    y = (y - a_s)
+
+print()
+print(f'{x_vertex},{y_vertex} Vertex')
+
+x = 0
+y = 0
+a_s = a * step
+#a|x-h|+k
+
+x = (x - h)
+
+y = y + k
+
+while x_limit > 0:
+    print()
+    x_limit = x_limit - 1
+    x = (x + step)
+    y = (y + a_s)
+    print(f'{x},{y}')
+#Halls Of Treachery
+#Bicycle Kick
+#Trick or Defeat
