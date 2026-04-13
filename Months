@@ -1,0 +1,6 @@
+#Months
+months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+n = eval(input("What month number?: "))
+
+print(f"\nThe month you are talking about is {months[n-1]}.")
