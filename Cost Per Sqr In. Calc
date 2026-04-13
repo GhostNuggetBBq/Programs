@@ -1,0 +1,8 @@
+#Cost Per Sqr In. Calc
+Cost = eval(input('Give the Cost Per Sqr. In.:'))
+Diameter = eval(input('Give the pizza diameter:'))
+Radius = Diameter / 2
+
+Area = 3.14 * (Radius * Radius)
+Price = Area * Cost
+print('The price is', Price)
