@@ -1,0 +1,12 @@
+#3 People Complaments
+print("People list:\n-Zeke\n-Gabe\n-Lucas")
+Q = str(input("\nWho: "))
+
+if Q == "Zeke" or Q == "zeke":
+    print("You are very well rounded. And I bet you would do good in a hotdog eating competition.")
+if Q == "Gabe" or Q == "gabe":
+    print("You are very special in many ways.")
+if Q == "Lucas" or Q == "lucas":
+    print("You're very good at brawl stars.")
+else:
+    pass
