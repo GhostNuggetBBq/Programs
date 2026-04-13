@@ -1,0 +1,13 @@
+// Typedef test
+#include <iostream>
+
+typedef int number_n;
+
+int main() {
+    
+    number_n x = 1;
+    
+    std::cout << x << std::endl;
+
+    return 0;
+}
