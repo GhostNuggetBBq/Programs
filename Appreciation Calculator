@@ -1,0 +1,13 @@
+#Appreciation Calculator
+years = eval(input('How many years in the future?:'))
+print()
+apr = eval(input('How much percentage of interest?:'))
+print()
+money = eval(input('How much money are you investing?:'))
+apr = apr / 100
+
+print()
+for i in range(years):
+    money = money * (1 + apr)
+print('I foresee you having', end=' ')
+print(money, 'dollars.')
