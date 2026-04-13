@@ -1,0 +1,86 @@
+//PID Experiment/Example    
+include <iostream>
+
+int main() {
+    //PID Variables
+    float kP = 0.87;
+    float kI = 0;
+    float kD = 0.73;
+    
+    //Drift Adjustment Variable
+    float kP_Drift = -0.03;
+    
+    //Speed Limits
+    float Upper_Limit = 10;
+    float Lower_Limit = 0.8;
+    
+    //Math variables
+    float sum = 0;
+    float last_change = 0;
+    
+    float Set = 12;
+    int attempts = 20;
+    
+    while (attempts > 0){
+        std::cout << "\nHas " << attempts << " Attempts Left";
+        std::cout << "\nIs told to Go: " << Set << " Units";
+        
+        float real = Set + .013;
+        float change = Set - real;
+        
+        sum += change;
+        float derivative = (change - last_change);
+        
+        last_change = change;
+
+        //Main PID Math
+        float forward_power = (kP * change) + (kI * sum) + (kD * derivative);
+        
+        //Upper Forward Speed Limiter
+        if (forward_power > Upper_Limit){
+            forward_power = Upper_Limit;
+        }
+        if (forward_power < -Upper_Limit){
+            forward_power = -Upper_Limit;
+        }
+        
+        //Lower Speed Limiter
+        if (abs(change) > 2){
+            if (forward_power > 0){
+                forward_power = std::max(forward_power, Lower_Limit);
+            }
+            else{
+                forward_power = std::min(forward_power, -Lower_Limit);
+            }
+        }
+        
+        float drift_correction = 0.021 * kP_Drift;
+        
+        float left_power  = forward_power - drift_correction;
+        float right_power = forward_power + drift_correction;
+        
+        //Left Speed Limiter
+        if (left_power > Upper_Limit){
+            left_power = Upper_Limit;
+        }
+        if (left_power < -Upper_Limit){
+            left_power = -Upper_Limit;
+        }
+        
+        //Right Speed Limiter
+        if (right_power > Upper_Limit){
+            right_power = Upper_Limit;
+        }
+        if (right_power < -Upper_Limit){
+            right_power = -Upper_Limit;
+        }
+        
+        std::cout << "\nRight power is: " << right_power << " Units";
+        std::cout << "\nLeft power is: " << left_power << " Units\n";
+        
+        attempts -= 1;
+        
+    }
+
+    return 0;
+}
