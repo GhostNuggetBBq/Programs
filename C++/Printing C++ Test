@@ -1,0 +1,10 @@
+// Printing C++ Test
+#include <iostream>
+
+int main() {
+    // Write C++ code here
+    std::cout << "This" << "\nIs" << std::endl;
+    std::cout << "Fun";
+
+    return 0;
+}
