@@ -1,0 +1,75 @@
+#Computer Sci. Story
+import time
+
+Decision = input("Are you ready? ")
+print()
+print("Your choices do not matter. \n \n")
+
+print("You wake up in a forest. \n \nYou see two paths. \n \nOne leads to a pond, \n \nthe other leads to a well. \n")
+
+op = str(input("Go to the well(A) or go to the pond(B): "))
+
+if op == "A" or op == "a":
+    print("\nYou walk to the well. \n \nA fallen knight sits beside the well. Its sword sparkles in the light. \n \nYou also see a bucket on the wall of the well.")
+    op = str(input("Grab sword(A) or reach in bucket(B):"))
+    if op == "A" or op == "a":
+        print("You touch the knights sword.")
+        time.sleep(1)
+        print("It springs to life and slashes its sword in your direction.")
+        print("Run away(A) or fight back(B):")
+        if op == "A" or op == "a":
+            print("You point in a random direction..")
+            time.sleep(1)
+            print("The knight follows your finger. \n\nYou make a break for it.")
+            time.sleep(1)
+            print("You trip and fall on a rock and die. \n\nThe End")
+        if op == "B" or op == "b":
+            print("You swing at the knight.")
+            time.sleep(1)
+            print("You trip on a rock and fall. You simly die.. \n\nThe End")
+    if op == "B" or op == "b": #Path done
+        print("You plunge your hand in the bucket and fell a wire.")
+        time.sleep(1)
+        print("...")
+        time.sleep(1)
+        print(">A wire? You pull the wire.")
+        time.sleep(1)
+        print(">3")
+        time.sleep(1)
+        print(">2")
+        time.sleep(1)
+        print(">1")
+        time.sleep(3)
+        print(">The experiment has been concluded. Bravo for getting out. Goodbye.")
+        time.sleep(1)
+        print("\n>The End")
+    else:
+        pass
+if op == "B" or op == "b":
+    print("\nYou walk to the pond. \n \nYou see your reflection. \n \nIt moves out of sync. \n \nYou feel the urge to get in the water.")
+    op = str(input("Back away(A) or reach in(B):"))
+    if op == "A" or op == "a":
+        print("\nYou back away and see a houses light. \n \nAs you open the door, as you've done a 1000 time before, you see your family waiting for you, smiling. \n \n \nThe End")
+    if op == "B" or op == "b":
+        print("\nYou reach in the water.")
+        time.sleep(1)
+        print("\nYou feel as if something pulls you in.")
+        time.sleep(1)
+        print('\nYou see yourself, he tells you, “.em wolloF .tsevrah eht rof tcefrep eb lliw uoY”')
+        op = str(input('Follow "Yourself"(A) or Run away(B):'))
+        if op == "A" or op == "a":
+            print('You follow "Yourself" into a clearing of twisted trees in the shape of screaming soldiers.')
+            time.sleep(1)
+            print('You find "yourself" in a valley with a cross in the middle.')
+            time.sleep(1)
+            print('"Yourself" and your "Family"grab you and place you on the cross.')
+            time.sleep(1)
+            print('They set the cross ablaze and you feel your sins mixed with the sins of others drag you down.')
+            time.sleep(1)
+            print("\nThe End")
+        if op == "B" or op == "b":
+            print("You ran for the hills but the world is wrong. Impossible landscapes mixed with things posing as normal creatures. You succumb to the world's hunger. \n\nThe End")
+    else:
+        pass
+else:
+    pass

@@ -1,0 +1,62 @@
+#Sum Return
+
+def sum(a, b):
+    return (a + b)
+
+a = int(input('Enter 1st number: '))
+b = int(input('Enter 2nd number: '))
+
+print(f'Sum of {a} and {b} is {sum(a, b)}')
+
+#Change Formula
+import random
+
+def go_forward(dist):
+    real = 0
+    prev = real
+    fails = []
+    
+    print("Go", dist)
+    
+    failure = dist
+    real = dist + (random.randrange(-300, 300)/10000)
+    failure -= real
+    
+    print("Fail", failure)
+    print("real", real)
+    
+    change = dist - real
+    
+    fails.append(abs(change))
+    print("Fail Collection", fails)
+    
+    avg_fail = sum(fails) / len(fails)
+    print("Avg", avg_fail, "\n")
+    
+    for i in range(1,5):
+        dist = change
+        prev = real
+        
+        print("Go", dist)
+        
+        real = dist + (random.randrange(-300, 300)/10000)
+        
+        print("real", real)
+        
+        change = dist - real
+        
+        fails.append(abs(change))
+        print("Fail Collection", fails)
+        
+        avg_fail = sum(fails) / len(fails)
+        print("Avg", avg_fail)
+        
+        failure -= real
+        
+        print("Fail",failure, "\n")
+        
+go_forward(12)
+
+print("\nNext\n")
+
+go_forward(6)

@@ -1,0 +1,21 @@
+#Plug and Chug Math Quad. and Linear Calc Not Finished
+print('ax^2 + bx + c')
+def optionabcd():
+    print('Where will you go?')
+    print('  A          B   ')
+    selection = input()
+    selection = selection.lower()
+    global A
+    if len(selection) != 1:
+        print('Please enter a single letter.')
+    elif selection not in 'abAB':
+        print('Please enter a valid letter.')
+    elif selection in 'Aa':
+        print(o1)
+        A = 0
+        print(A)
+    elif selection in 'Bb':
+        print(o2)
+        A = 1
+        return selection
+optionab()

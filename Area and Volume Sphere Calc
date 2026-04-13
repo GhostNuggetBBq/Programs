@@ -1,0 +1,9 @@
+#Area and Volume Sphere Calc
+v = eval(input('Give volume:'))
+r = eval(input('Give radius:'))
+
+Solution_Vol = 4/3 * 3.14 * (r * r * r)
+Solution_Area = 4 * 3.13 * (r * r)
+
+print(‘The Volume is:’, Solution_Vol)
+print(‘The Are is:’, Solution_Area)

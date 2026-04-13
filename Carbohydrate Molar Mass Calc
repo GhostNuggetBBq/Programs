@@ -1,0 +1,7 @@
+#Carbohydrate Molar Mass Calc
+O = eval(input('How many Oxygen:'))
+C = eval(input('How many Carbon:'))
+H = eval(input('How many Hydrogen:'))
+
+Molor_Mass = O*(15.9994) + H*(1.00794) + C*(12.0107)
+print('The Molor Mass is', Molor_Mass)

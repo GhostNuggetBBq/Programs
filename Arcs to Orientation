@@ -1,0 +1,15 @@
+#Arcs to Orientation
+import math
+
+Left_Change = eval(input("Left change: "))
+Right_Change = eval(input("Right change: "))
+
+Right_Offset = 7.25 #Inches
+Left_Offset = 7.25 #Inches
+
+Orientation_rad = (Left_Change - Right_Change)/(Left_Offset + Right_Offset)
+print(Orientation_rad, "Radians")
+
+Orientation_deg = Orientation_rad * 180/math.pi
+
+print(Orientation_deg, "Degrees")

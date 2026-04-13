@@ -1,0 +1,20 @@
+#Energy of Formic Acid
+x = eval(input('Mass >'))
+print()
+
+solid = x * 1.82 * (0-(-8))
+print(f'Solid >{solid}J')
+freeze = x * 276
+print(f'Freeze >{freeze}J')
+liquid = x * 2.2 * (101-8)
+print(f'Liquid >{liquid}J')
+vapor = x * 517
+print(f'Vapor >{vapor}J')
+gas = x * 1.09 * (110-101)
+print(f'Gas >{gas}J')
+
+print()
+total = solid + freeze + liquid + vapor + gas
+print(f'Heating Total >{total}J')
+
+print(f'Cooling Total >{total * -1}J')

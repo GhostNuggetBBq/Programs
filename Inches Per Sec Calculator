@@ -1,0 +1,9 @@
+#Inches Per Sec Calculator
+D = eval(input('What is the diameter of the Wheels in inches?:'))
+print()
+RPM = eval(input('What is the RPM?:'))
+print()
+
+Speed = (RPM / 60) * (D * 3.14)
+print('The speed is', end=' ')
+print(Speed, 'inches per second.')

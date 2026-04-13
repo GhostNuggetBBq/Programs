@@ -1,0 +1,30 @@
+#Quadratic Equation
+a = eval(input('Give me the a value:'))
+
+b = eval(input('Give me the b value:'))
+
+c = eval(input('Give me the c value:'))
+
+step = eval(input('Give me the step value:'))
+
+x_limit = eval(input('When do you want the x to stop:'))
+
+neg_x_limit = x_limit
+
+y = 0
+x = 0
+
+y = (y + c)
+
+y_vertex = y
+x_vertex = x 
+
+x += b
+
+while x_limit > 0:
+    print()
+    x_limit -= 1
+    y_printed = (y ** 2) + a ** 2
+    y += 1
+    print(f'{x},{y_printed}')
+    x = (x + step)

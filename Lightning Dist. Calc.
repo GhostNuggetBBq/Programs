@@ -1,0 +1,6 @@
+#Lightning Dist. Calc.
+Elaspsed_Time = eval(input())
+Sound_Time = eval(input())
+
+Distance = (1100/(Sound_Time/Elapsed_Time))*5280
+print(str(Distance) + 'ft')

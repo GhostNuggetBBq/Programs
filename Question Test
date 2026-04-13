@@ -1,0 +1,27 @@
+#Question Test
+Item_A = False
+Item_B = False
+
+
+def Test_Question():
+    option = input("> ")
+    global Item_A
+    global Item_B
+    
+    
+    if option == "A" or option == "a":
+        print('A')
+        Item_A = True
+        Item_B = False
+    if option == "B" or option == "b":
+        print('B')
+        Item_B = True
+        Item_A = False
+
+Test_Question()
+print("A", Item_A)
+print("B", Item_B, "\n")
+
+Test_Question()
+print("A", Item_A)
+print("B", Item_B)
