@@ -1,0 +1,14 @@
+#Quadratic Formula Calulator
+import cmath
+
+a = float(input('Enter coefficant a:'))
+b = float(input('Enter coefficant b:'))
+c = float(input('Enter coefficant c:'))
+
+discRoot = cmath.sqrt(b * b - 4 * a * c)
+root1 = (-b + discRoot) / (2 * a)
+root2 = (-b - discRoot) / (2 * a)
+
+print()
+print("The solutions are:" , root1, root2)
+
