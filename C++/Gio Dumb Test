@@ -1,0 +1,16 @@
+//Gio Dumb Test
+#include <iostream>
+#include <string>
+
+int main() {
+    
+    float iny = 0.1 + 0.2;
+    
+    bool isTrue = false;
+    
+    if(iny == 0.3) isTrue = true;
+
+    std::cout << isTrue;
+
+    return 0;
+}
