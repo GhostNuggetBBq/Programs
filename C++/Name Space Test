@@ -1,0 +1,19 @@
+// Name space test
+#include <iostream>
+
+namespace first {
+    
+    int x = 5;
+    
+    };
+
+int main() {
+    
+    int x = 1;
+    
+    std::cout << x << std::endl;
+    
+    std::cout << first::x;
+
+    return 0;
+}
