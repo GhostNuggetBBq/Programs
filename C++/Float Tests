@@ -1,0 +1,12 @@
+//Float Tests
+#include <iostream>
+#include <string>
+
+int main() {
+    
+    float iny = 1.495979E11;
+    
+    std::cout << iny;
+
+    return 0;
+}
